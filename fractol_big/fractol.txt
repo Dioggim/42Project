@@ -1,0 +1,121 @@
+Aqui está a tradução completa do conteúdo do projeto **fract’ol**, do PDF que você enviou, para o **Português Brasileiro**:
+
+---
+
+## Projeto de CGI: **fract’ol**
+
+### **Resumo:**
+Este projeto tem como objetivo criar fractais graficamente bonitos.
+
+---
+
+## **Índice Geral**
+I. Progresso  
+II. Introdução  
+III. Objetivos  
+IV. Instruções gerais  
+V. Parte obrigatória  
+- V.1. Renderização  
+- V.2. Representação gráfica  
+VI. Parte bônus  
+VII. Entrega e avaliação  
+
+---
+
+## **Capítulo I – Progresso**
+(Este trecho é apenas uma brincadeira sobre azeite de oliva, sem relação com o projeto. Pode ser ignorado.)
+
+---
+
+## **Capítulo II – Introdução**
+O termo **fractal** foi usado pela primeira vez pelo matemático **Benoit Mandelbrot** em **1974**, baseado na palavra latina *fractus*, que significa “quebrado” ou “fraturado”.  
+Um **fractal** é um objeto de abstração matemática, como uma curva ou superfície, que mantém um padrão semelhante independentemente da escala.  
+Vários fenômenos naturais — como o romanesco — têm características fractais.  
+Agora, é a sua vez de criar alguns fractais majestosos.
+
+---
+
+## **Capítulo III – Objetivos**
+Você criará um projeto básico de **gráficos por computador**, utilizando a **biblioteca gráfica do campus: miniLibX**.  
+Essa biblioteca foi desenvolvida internamente e inclui ferramentas básicas para abrir uma janela, criar imagens e lidar com eventos do teclado e do mouse.
+
+Com esse projeto, você irá:
+- Se familiarizar com a miniLibX.
+- Trabalhar com **números complexos** (conceito matemático importante).
+- Ter uma noção de **otimização** em CGI (Computer-Generated Imagery).
+- Praticar **manipulação de eventos**.
+
+**Dica:** Assista aos vídeos no e-learning.
+
+---
+
+## **Capítulo IV – Instruções Gerais**
+- O projeto deve ser escrito em **C**.
+- Deve seguir a **Norma da 42**. Erros em qualquer parte do código (mesmo em arquivos auxiliares) resultarão em **nota zero**.
+- Não pode haver **falhas de execução** (segfault, double free, etc). Caso ocorra, o projeto será considerado não funcional e receberá **nota zero**.
+- Toda **memória alocada** deve ser **liberada corretamente**. **Vazamentos de memória (leaks)** não são permitidos.
+- O projeto deve conter um **Makefile** com as regras: `all`, `clean`, `fclean`, `re`, `bonus`.
+- O Makefile deve usar `cc` com as flags `-Wall -Wextra -Werror`, e **não** pode fazer relink.
+- Se você usar a **libft**, ela deve estar na pasta `libft/`, com seu próprio Makefile.
+- É recomendável criar programas de **teste**, mesmo que não sejam avaliados.
+- O projeto deve ser enviado para o **repositório Git atribuído**. Apenas o conteúdo do repositório será avaliado.
+
+---
+
+## **Capítulo V – Parte Obrigatória**
+
+- **Nome do programa:** `fractol`  
+- **Arquivos obrigatórios:** `Makefile`, `*.c`, `*.h`  
+- **Argumentos:** Tipo de fractal e outras opções.  
+- **Funções permitidas:**
+  - `open`, `close`, `read`, `write`, `malloc`, `free`, `perror`, `strerror`, `exit`
+  - Funções da lib math (`-lm`)
+  - Todas as funções da **miniLibX**
+  - `ft_printf` ou função equivalente
+- **Pode usar libft:** Sim  
+
+### Regras:
+- Usar obrigatoriamente a miniLibX.
+- O Makefile não pode fazer relink.
+- **Proibido usar variáveis globais.**
+
+---
+
+### **V.1. Renderização**
+- Seu programa deve exibir os **conjuntos de Julia e Mandelbrot**.
+- A **roda do mouse** deve fazer zoom in/out **quase infinitamente**.
+- O conjunto de Julia deve ser configurável via **parâmetros de linha de comando**.
+- Um **parâmetro CLI** definirá o tipo de fractal.  
+  - Caso o parâmetro seja ausente ou inválido, o programa deve listar as opções válidas e **encerrar corretamente**.
+- Usar **cores diferentes** para mostrar a profundidade dos fractais (efeitos psicodélicos são bem-vindos!).
+
+---
+
+### **V.2. Representação Gráfica**
+- A imagem do fractal deve ser mostrada em uma **janela gráfica**.
+- A janela deve ser **responsiva** (minimizar, trocar de janela, etc.).
+- A tecla `ESC` deve **fechar a janela e encerrar o programa corretamente**.
+- Clicar no **"X"** da janela também deve encerrar o programa corretamente.
+- É **obrigatório** o uso de **imagens da miniLibX**.
+
+---
+
+## **Capítulo VI – Parte Extra (Bônus)**
+
+Mesmo que projetos mais interessantes venham depois, você pode ganhar pontos extra com:
+
+- Implementar um **novo fractal** além dos obrigatórios (há centenas na internet).
+- Fazer o **zoom seguir o ponteiro do mouse**.
+- Permitir mover-se pela imagem com as **setas do teclado**.
+- Alterar **dinamicamente o esquema de cores**.
+
+**Atenção:** Os bônus **só serão avaliados se a parte obrigatória estiver 100% perfeita.**
+
+---
+
+## **Capítulo VII – Entrega e Avaliação**
+- Entregue o trabalho no seu **repositório Git oficial**.
+- Verifique os **nomes dos arquivos** com atenção.
+- A organização dos arquivos é livre, desde que respeite os requisitos e inclua os obrigatórios.
+
+---
