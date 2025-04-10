@@ -3,7 +3,7 @@ NAME		= fractol
 CC			= cc
 CFLAGS		= -Wall -Wextra -Werror -O3
 
-MLX_DIR		= ./minilibx-linux/
+MLX_DIR		= ./includes/minilibx-linux/
 MLX_FLAGS	= -L$(MLX_DIR) -lmlx -lXext -lX11 -lm
 INCLUDE		= -I$(MLX_DIR)
 
