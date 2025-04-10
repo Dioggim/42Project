@@ -36,7 +36,7 @@ Cada fractal pode ser explorado com:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/diogodiaz/fractol.git
+git clone https://github.com/Dioggim/fractol.git
 cd fractol
 ```
 
@@ -111,7 +111,7 @@ fractol/
 
 **Diogo Gimenez**
 - 42 Login: dgimenez
-- GitHub: [@diogodiaz](https://github.com/diogodiaz)
+- GitHub: [@Dioggim](https://github.com/Dioggim)
 
 ## 📝 Notas
 
@@ -246,7 +246,7 @@ void *calculate_region(void *arg)
 }
 ```
 
-## 🚀 Próximos Passos
+## 🚀 Dicas para brincar com o codigo
 
 Algumas ideias para expandir o projeto:
 - Adicionar mais tipos de fractais (Sierpinski, Phoenix, etc.)
