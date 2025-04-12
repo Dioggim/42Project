@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   events.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dgimenez <dgimenez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dgimenez <dgimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 11:51:50 by dgimenez          #+#    #+#             */
-/*   Updated: 2025/04/10 11:51:50 by dgimenez         ###   ########.fr       */
+/*   Updated: 2025/04/12 23:13:27 by dgimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,26 @@ int	handle_key(int keycode, t_data *data)
 	return (0);
 }
 
-int	close_window(t_data *data)
+void	move_view(t_data *data, double range_x, double range_y, int dir)
 {
-	mlx_destroy_image(data->mlx, data->img);
-	mlx_destroy_window(data->mlx, data->win);
-	exit(0);
-	return (0);
+	if (dir == KEY_LEFT)
+	{
+		data->min_x -= range_x * 0.1;
+		data->max_x -= range_x * 0.1;
+	}
+	else if (dir == KEY_RIGHT)
+	{
+		data->min_x += range_x * 0.1;
+		data->max_x += range_x * 0.1;
+	}
+	else if (dir == KEY_UP)
+	{
+		data->min_y -= range_y * 0.1;
+		data->max_y -= range_y * 0.1;
+	}
+	else if (dir == KEY_DOWN)
+	{
+		data->min_y += range_y * 0.1;
+		data->max_y += range_y * 0.1;
+	}
 }

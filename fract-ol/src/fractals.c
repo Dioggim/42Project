@@ -3,14 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   fractals.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dgimenez <dgimenez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dgimenez <dgimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 11:51:50 by dgimenez          #+#    #+#             */
-/*   Updated: 2025/04/10 11:51:50 by dgimenez         ###   ########.fr       */
+/*   Updated: 2025/04/12 23:10:05 by dgimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
+
+t_complex	create_complex(double real, double imag)
+{
+	t_complex	c;
+
+	c.real = real;
+	c.imag = imag;
+	return (c);
+}
 
 int	mandelbrot_iteration(t_complex c, int max_iter)
 {
